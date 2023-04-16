@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(208, 233, 255);
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 250px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+
+#month {
+    position: relative;
+    background-color: orange;
+    color: white;
+    padding: 0.4rem;
+    width: 100%;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    font-size: 2.0625rem;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#day {
+    position: relative;
+    font-size: 1.3125rem;
+    opacity: 0.5;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#date {
+    position: relative;
+    font-size: 4.0625rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#year {
+    position: relative;
+    font-size: 1.25rem;
+    opacity: 0.4;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.calendarText {
+    position: absolute;
+    font-size: 3.125rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    margin-bottom: 25rem;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+.dates{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width:300px;
+  height:30px;
+  margin-top: 18.75rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.875rem;
+}
+
+#dates{
+  margin-right: 0.3125rem;
+}
+
+#creditText {
+    position: absolute;
+    margin-top: 30rem;
+    padding-bottom: 1rem;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+#creditText a {
+    text-decoration: none;
+}
+
+@media screen and (max-width:600px) {
+
+    #creditText {
+        max-width: 210px;
+    }
+}
