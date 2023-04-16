@@ -6,6 +6,7 @@
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: rgb(208, 233, 255);
@@ -13,7 +14,18 @@ body {
     min-height: 100vh;
 }
 
+.calendarText {
+    position: relative;
+    font-size: 3.125rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    margin-bottom: 25rem;
+    font-weight: bold;
+    opacity: 0.8;
+    margin-bottom: 23rem;
+}
 .container {
+    position: absolute;
     background-color: rgb(255, 255, 255);
     width: 300px;
     height: 250px;
@@ -21,6 +33,7 @@ body {
     border-bottom-right-radius: 15px;
     border-top-left-radius:5px;
     border-top-right-radius:5px;
+    margin: 0 26rem auto;
 }
 
 #month {
@@ -61,15 +74,6 @@ body {
     margin-top: 1.5rem;
 }
 
-.calendarText {
-    position: absolute;
-    font-size: 3.125rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: black;
-    margin-bottom: 25rem;
-    font-weight: bold;
-    opacity: 0.8;
-}
 
 .dates{
   display: flex;
